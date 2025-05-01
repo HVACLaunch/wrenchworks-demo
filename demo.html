@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrenchWorks - HVAC Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 1rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        .button {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 0.5rem;
+        }
+        .button:disabled {
+            background-color: #95a5a6;
+        }
+        .job, .client {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            padding: 1rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WrenchWorks</h1>
+    <p>HVAC Job Management Dashboard (Demo)</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Today's Overview</h2>
+        <p><strong>Jobs Scheduled:</strong> 3</p>
+        <p><strong>Quotes Sent:</strong> 2</p>
+        <p><strong>Invoices Due:</strong> 1</p>
+        <button class="button">Book New Job</button>
+        <button class="button">Send Invoice</button>
+    </div>
+
+    <div class="card">
+        <h2>Clients</h2>
+        <div class="client"><strong>Jane HVAC</strong> - jane@hvacmail.com</div>
+        <div class="client"><strong>Mike's Cooling</strong> - mike@coolairpro.com</div>
+        <div class="client"><strong>Sunny AC Repair</strong> - sunny@acrepairs.com</div>
+    </div>
+
+    <div class="card">
+        <h2>Recent Jobs</h2>
+        <div class="job">4/28 - AC Tune-Up - Mike's Cooling</div>
+        <div class="job">4/27 - System Replacement - Jane HVAC</div>
+        <div class="job">4/26 - Emergency Repair - Sunny AC Repair</div>
+    </div>
+
+    <div class="card">
+        <h2>Quick Actions</h2>
+        <button class="button">Create Quote</button>
+        <button class="button">Send Email</button>
+        <button class="button" disabled>Generate Report (Coming Soon)</button>
+    </div>
+</div>
+
+<footer>
+    Demo only. No real data is saved. WrenchWorks &copy; 2025
+</footer>
+
+</body>
+</html>
