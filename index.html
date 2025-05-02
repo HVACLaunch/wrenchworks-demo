@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,13 +56,18 @@
             <a href="features.html" class="button">What’s Included</a>
         </div>
         <div style="text-align: center; margin-top: 40px;">
-          <a href="https://buy.stripe.com/4gw8Aq3qA2Xw4pWcMM" target="_blank" style="padding: 14px 28px; background-color: #004aad; color: #fff; text-decoration: none; font-size: 18px; border-radius: 8px;">
+          <button id="checkoutBtn" style="padding: 14px 28px; background-color: #004aad; color: #fff; border: none; font-size: 18px; border-radius: 8px; cursor: pointer;">
             🚀 Launch My HVAC Business
-          </a>
+          </button>
           <p style="margin-top: 10px; font-size: 14px; color: #555;">
             One-time setup • Full ownership • No monthly fee from us
           </p>
         </div>
     </div>
 </body>
+<script>
+  document.getElementById('checkoutBtn').addEventListener('click', function() {
+    window.open('https://buy.stripe.com/aEU02j2d6fkL9KUdQV', '_blank');
+  });
+</script>
 </html>
